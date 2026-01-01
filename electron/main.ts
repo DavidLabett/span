@@ -13,11 +13,6 @@ function createWindow() {
     backgroundColor: '#1e1e2e', // Catppuccin Base
     frame: false,
     titleBarStyle: 'hidden',
-    titleBarOverlay: {
-      color: '#1e1e2e',
-      symbolColor: '#cdd6f4',
-      height: 32,
-    },
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: false,

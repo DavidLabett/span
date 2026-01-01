@@ -15,6 +15,9 @@ interface ElectronAPI {
   listRecentProjects: () => Promise<RecentProject[]>
   showSaveImageDialog: () => Promise<string | null>
   saveImage: (filePath: string, imageData: string) => Promise<{ success: boolean; error?: string }>
+  windowMinimize: () => Promise<void>
+  windowMaximize: () => Promise<void>
+  windowClose: () => Promise<void>
 }
 
 interface Window {

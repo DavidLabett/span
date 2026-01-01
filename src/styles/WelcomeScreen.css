@@ -12,10 +12,11 @@
   width: 100%;
   max-width: 600px;
   padding: 48px 24px;
+  margin-bottom: 40px;
 }
 
 .welcome-title {
-  font-size: 56px;
+  font-size: 30px;
   font-weight: 300;
   color: var(--color-text, #cdd6f4);
   text-align: center;
@@ -46,25 +47,23 @@
 
 .new-project-button {
   background: transparent;
-  border: 1px solid var(--color-blue, #89b4fa);
-  color: var(--color-text, #a2a2a2);
-  padding: 8px 16px;
+  border: none;
+  color: var(--color-text, #cdd6f4);
+  padding: 4px 8px;
   font-family: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
   font-size: 11px;
-  font-weight: 500;
-  border-radius: 2px;
+  font-weight: 400;
   cursor: pointer;
-  transition: opacity 150ms;
+  transition: color 150ms;
+  text-decoration: none;
 }
 
 .new-project-button:hover {
-  opacity: 0.9;
-  background:var(--color-blue, #94cfff);
-  color: #1e1e2e;
+  color: var(--color-blue, #89b4fa);
 }
 
 .new-project-button:active {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .project-list {

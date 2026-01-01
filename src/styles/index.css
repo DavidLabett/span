@@ -108,6 +108,20 @@ body {
   -webkit-app-region: drag;
   background-color: var(--color-bg);
   flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Ensure window controls are above titlebar */
+.titlebar-drag-region::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 32px;
+  -webkit-app-region: no-drag;
+  pointer-events: none;
 }
 
 .canvas-container {

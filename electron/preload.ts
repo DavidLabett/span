@@ -22,5 +22,14 @@ contextBridge.exposeInMainWorld('electronAPI', {
   
   saveImage: (filePath: string, imageData: string) =>
     ipcRenderer.invoke('save-image', { filePath, imageData }),
+
+  windowMinimize: () =>
+    ipcRenderer.invoke('window-minimize'),
+
+  windowMaximize: () =>
+    ipcRenderer.invoke('window-maximize'),
+
+  windowClose: () =>
+    ipcRenderer.invoke('window-close'),
 })
 
